@@ -66,9 +66,45 @@
             font-weight: bold;
         }
 
-        img {
+        /* img {
             margin-left: 10px;
             padding: 10px;
+
+        } */
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -98,7 +134,7 @@
         </nav>
     </div>
 
-    <img src="image/nina 12.jpg" alt="" style="height: 1000px;; width: 100%; margin: 0%; padding: 0%;">
+    <img src="image/nina 12.jpg" alt="" class="img-fluid" alt="Responsive image" style="width: 100%;">
     <main>
         <article>
             <br>
@@ -116,24 +152,42 @@
 
 
     <h1 style=" margin-left: 30px;">My Gallary</h1>
-    <img src="image/nina 2.jpg" alt="" style="border-radius:50px; width:30%; height: 300px;">
-    <img src="image/nina 15.jpg" alt="" style="border-radius:50px; width:30%; height: 300px;">
-    <img src="image/nina 19.jpg" alt="" style="border-radius:50px; width:30%; height: 300px;">
-    <img src="image/nina 32.jpg" alt="" style="border-radius:50px; width:30%; height: 300px;">
-    <img src="image/nina3.jpg" alt="" style="border-radius:50px; width:30%; height: 300px;">
-    <img src="image/nina 12.jpg" alt="" style="border-radius:50px; width:30%; height: 300px;">
-    <img src="image/ nina 5.jpg" alt="" style="border-radius:50px; width:30%; height: 300px;">
-    <img src="image/nina 7.jpg" alt="" style="border-radius:50px;width:30%; height: 300px;">
-    <img src="image/nina 8.jpg" alt="" style="border-radius:50px; width:30%; height: 300px;">
-    <img src="image/nina 10.jpg" alt="" style="border-radius:50px;width:30%; height: 300px;">
-    <img src="image/nina 17.jpg" alt="" style="border-radius:50px; width:30%; height: 300px;">
-    <img src="image/nina 22.jpg" alt="" style="border-radius:50px;width:30%; height: 300px;">
-    <img src="image/nina 27.jpg" alt="" style="border-radius:50px; width:30%; height: 300px;">
-    <img src="image/nina 13.jpg" alt="" style="border-radius:50px;width:30%; height: 300px;">
-    <img src="image/nina 37.jpg" alt="" style="border-radius:50px; width:30%; height: 300px;">
-    <img src="image/nina 18.jpg" alt="" style="border-radius:50px;width:30%; height: 300px;">
-    <img src="image/nina 38.jpg" alt="" style="border-radius:50px; width:30%; height: 300px;">
-    <img src="image/nina 30.jpg" alt="" style="border-radius:50px;width:30%; height: 300px;">
+
+    <div class="row">
+        <div class="column">
+            <img src="image/nina 2.jpg" alt="" height="400">
+            <img src="image/nina 15.jpg" alt="" height="400">
+            <img src="image/nina 19.jpg" alt="" height="400">
+        </div>
+        <div class="column">
+            <img src="image/nina 32.jpg" alt="" height="400">
+            <img src="image/nina3.jpg" alt="" height="400">
+            <img src="image/nina 12.jpg" alt="" height="400">
+        </div>
+        <div class="column">
+            <img src="image/ nina 5.jpg" alt="" height="400">
+            <img src="image/nina 7.jpg" alt="" height="400">
+            <img src="image/nina 8.jpg" alt="" height="400">
+        </div>
+
+        <div class="column">
+            <img src="image/nina 10.jpg" alt="" height="400">
+            <img src="image/nina 17.jpg" alt="" height="400">
+            <img src="image/nina 22.jpg" alt="" height="400">
+        </div>
+        <div class="column">
+            <img src="image/nina 6.jpg" alt="" height="400">
+            <img src="image/nina 26.jpg" alt="" height="400">
+            <img src="image/nina 14.jpg" alt="" height="400">
+        </div>
+        <div class="column">
+            <img src="image/nina 25.jpg" alt="" height="400">
+            <img src="image/nina 28.jpg" alt="" height="400">
+            <img src="image/nina 12.jpg" alt="" height="400">
+        </div>
+
+    </div>
+
 
 </body>
 <br><br><br>
