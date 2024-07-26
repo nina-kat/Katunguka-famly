@@ -55,9 +55,53 @@
             font-weight: bold;
         }
 
+        .contain {
+            position: relative;
+            float: left;
+            width: 33%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+
+        }
+
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .contain:hover .image {
+            opacity: 0.3;
+        }
+
+        .contain:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: #04AA6D;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+
         img {
             padding: 10px 20px;
         }
+
     </style>
 </head>
 
@@ -104,15 +148,69 @@
         </article>
     </main>
 
-    <img src="image/IMG_20201010_125145.jpg" alt="" style="width: 30%; height: 280px; ">
-    <img src="image/papa.jpg" alt="" style="width: 30%; height: 280px; ">
-    <img src="image/papa2.jpg" alt="" style="width: 30%; height: 280px; ">
-    <img src="image/papa3.jpg" alt="" style="width: 30%; height: 280px; ">
-    <img src="image/papa12.jpg" alt="" style="width: 30%; height: 280px; ">
-    <img src="image/papa5.jpg" alt="" style="width: 30%; height: 280px;">
-    <img src="image/papa9.jpg" alt="" style="width: 30%;; height: 280px; ">
-    <img src="image/papa7.jpg" alt="" style="width: 30%; height: 280px; ">
-    <img src="image/papa10.jpg" alt="" style="width: 30%; height: 280px; ">
+    <div class="contain">
+        <img src="image/IMG_20201010_125145.jpg" alt="" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">Family and Friends</div>
+        </div>
+    </div>
+
+    <div class="contain">
+        <img src="image/papa.jpg" alt="" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">Family and Friends</div>
+        </div>
+    </div>
+    
+    <div class="contain">
+        <img src="image/papa2.jpg" alt="" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">Family and Friends</div>
+        </div>
+    </div>
+
+    <div class="contain">
+        <img src="image/papa3.jpg" alt="" class="image" style="width:100%; height: 200px;">
+        <div class="middle">
+            <div class="text">Family and Friends</div>
+        </div>
+    </div>
+
+    <div class="contain">
+        <img src="image/papa12.jpg" alt="" class="image" style="width:100%; height: 200px;">
+        <div class="middle">
+            <div class="text">Family and Friends</div>
+        </div>
+    </div>
+
+    <div class="contain">
+        <img src="image/papa5.jpg" alt="" class="image" style="width:100%; height: 200px;">
+        <div class="middle">
+            <div class="text">Family and Friends</div>
+        </div>
+    </div>
+
+    <div class="contain">
+        <img src="image/papa9.jpg" alt="" class="image" style="width:100%; ">
+        <div class="middle">
+            <div class="text">Family and Friends</div>
+        </div>
+    </div>
+
+    <div class="contain">
+        <img src="image/papa7.jpg" alt="" class="image" style="width:100%;">
+        <div class="middle">
+            <div class="text">Family and Friends</div>
+        </div>
+    </div>
+
+    <div class="contain">
+        <img src="image/papa10.jpg" alt="" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">Family and Friends</div>
+        </div>
+    </div>
+   
 
 </body>
 
